@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.APPLICATION_JSON)
 public class LoveCalculator {
     
-    private int n;
+    private final int n;
     
     public LoveCalculator(int n) {
         this.n = n;

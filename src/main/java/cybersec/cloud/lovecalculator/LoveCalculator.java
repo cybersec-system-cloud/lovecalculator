@@ -1,4 +1,4 @@
-package ifts.lovecalculator;
+package cybersec.cloud.lovecalculator;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -24,7 +24,7 @@ public class LoveCalculator {
         // Calcola l'affinità tra "nome1" e "nome2" con la funzione indicata
         int numero1 = Math.abs(nome1.hashCode())*n;
         int numero2 = Math.abs(nome2.hashCode())*n;
-        int aff = (numero1 + numero2) % (this.n + 1);
+        int aff = Math.abs((numero1 + numero2) % this.n);
         // Restituisce il risultato calcolato
         return new RisultatoLoveCalculator(nome1,nome2,aff);
     }

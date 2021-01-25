@@ -1,4 +1,4 @@
-package cybersec.cloud.lovecalc;
+package cybersec.cloud.lovecalculator;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.Configuration;
